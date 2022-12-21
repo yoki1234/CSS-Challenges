@@ -1,0 +1,502 @@
+@import url('https://font.googleapis.com/css?family=Poppins:300,400,500,600,700,900&dispaly-swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background:rgb(255, 222, 222) ;
+}
+section{
+    position: relative;
+    top:0;
+    left: 13%;
+    width:100vh;
+    height: 100vh;
+}
+.leaf-animation1{
+   position: relative;
+   top: 20%;
+   left: 30%;
+   z-index: -2;
+}
+.leaf-animation2{
+    position: relative;
+    top: 60%;
+    left: 20%;
+ }
+.leaf-animation2 div{
+   width: 50px;
+   height: 60px;
+}
+.leaf-animation3{
+    position: relative;
+    top: 80%;
+    left: 50%;
+ }
+.leaf-animation3 div{
+   width: 70px;
+   height: 80px;
+}
+.leaf-animation5{
+    position: relative;
+    top: 35%;
+    left: 10%;
+ }
+.leaf-animation5 div{
+   width: 100px;
+   height: 80px;
+}
+.leaf-animation6{
+    position: relative;
+    top: 0%;
+    left: 60%;
+ }
+.leaf-animation6 div{
+   width: 220px;
+   height: 180px;
+}
+.leaf-animation4{
+    position: relative;
+    top: 40%;
+    left: 50%;
+ }
+.leaf-animation4 div{
+   width: 200px;
+   height: 140px;
+}
+.leaf-animation1 div{
+    width: 20px;
+    height: 30px;
+}
+.leaf1{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(116, 251, 140, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(180deg);
+    animation: animate-leaf1 5s linear infinite;
+}
+@keyframes animate-leaf1 {
+    0%{
+       transform: rotate(160deg);
+    }
+    10%{
+        transform: rotate(140deg);
+    }
+    20%{
+        transform: rotate(120deg);
+    }
+    30%{
+        transform: rotate(100deg);
+    }
+    40%{
+        transform: rotate(80deg);
+    }
+    50%{
+        transform: rotate(60deg);
+    }
+    60%{
+        transform: rotate(40deg);
+    }
+    70%{
+        transform: rotate(20deg);
+    }
+    80%{
+        transform: rotate(0deg);
+    }
+}
+.leaf2{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(246, 251, 116, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(160deg);
+    animation: animate-leaf2 6s linear infinite;
+}
+@keyframes animate-leaf2 {
+    0%{
+       transform: rotate(140deg);
+    }
+    10%{
+        transform: rotate(120deg);
+    }
+    20%{
+        transform: rotate(100deg);
+    }
+    30%{
+        transform: rotate(80deg);
+    }
+    40%{
+        transform: rotate(60deg);
+    }
+    50%{
+        transform: rotate(40deg);
+    }
+    60%{
+        transform: rotate(20deg);
+    }
+    70%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(-20deg);
+    }
+}
+.leaf3{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(224, 113, 16, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(140deg);
+    animation: animate-leaf3 7s linear infinite;
+}
+@keyframes animate-leaf3 {
+    0%{
+       transform: rotate(120deg);
+    }
+    10%{
+        transform: rotate(100deg);
+    }
+    20%{
+        transform: rotate(80deg);
+    }
+    30%{
+        transform: rotate(60deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(-20deg);
+    }
+    80%{
+        transform: rotate(-40deg);
+    }
+}
+.leaf4{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(216, 11, 11, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(120deg);
+    animation: animate-leaf4 8s linear infinite;
+}
+@keyframes animate-leaf4 {
+    0%{
+       transform: rotate(120deg);
+    }
+    10%{
+        transform: rotate(100deg);
+    }
+    20%{
+        transform: rotate(80deg);
+    }
+    30%{
+        transform: rotate(60deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(-20deg);
+    }
+    80%{
+        transform: rotate(-40deg);
+    }
+}
+.leaf5{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(8, 217, 232, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(100deg);
+    animation: animate-leaf5 9s linear infinite;
+}
+@keyframes animate-leaf5 {
+    0%{
+       transform: rotate(100deg);
+    }
+    10%{
+        transform: rotate(80deg);
+    }
+    20%{
+        transform: rotate(60deg);
+    }
+    30%{
+        transform: rotate(40deg);
+    }
+    40%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(-20deg);
+    }
+    70%{
+        transform: rotate(-40deg);
+    }
+    80%{
+        transform: rotate(-60deg);
+    }
+}
+.leaf6{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(2, 75, 15, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(80deg);
+    animation: animate-leaf6 10s linear infinite;
+}
+@keyframes animate-leaf6 {
+    0%{
+       transform: rotate(80deg);
+    }
+    10%{
+        transform: rotate(60deg);
+    }
+    20%{
+        transform: rotate(40deg);
+    }
+    30%{
+        transform: rotate(20deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    60%{
+        transform: rotate(-40deg);
+    }
+    70%{
+        transform: rotate(-60deg);
+    }
+    80%{
+        transform: rotate(-80deg);
+    }
+}
+.leaf7{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(3, 39, 245, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(60deg);
+    animation: animate-leaf7 11s linear infinite;
+}
+@keyframes animate-leaf7 {
+    0%{
+       transform: rotate(60deg);
+    }
+    10%{
+        transform: rotate(40deg);
+    }
+    20%{
+        transform: rotate(20deg);
+    }
+    30%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(-40deg);
+    }
+    60%{
+        transform: rotate(-60deg);
+    }
+    70%{
+        transform: rotate(-80deg);
+    }
+    80%{
+        transform: rotate(-100deg);
+    }
+}
+.leaf8{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(191, 7, 243, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(40deg);
+    animation: animate-leaf8 12s linear infinite;
+}
+@keyframes animate-leaf8 {
+    0%{
+       transform: rotate(40deg);
+    }
+    10%{
+        transform: rotate(20deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(-20deg);
+    }
+    40%{
+        transform: rotate(-40deg);
+    }
+    50%{
+        transform: rotate(-60deg);
+    }
+    60%{
+        transform: rotate(-80deg);
+    }
+    70%{
+        transform: rotate(-100deg);
+    }
+    80%{
+        transform: rotate(-120deg);
+    }
+}
+.leaf9{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(242, 13, 139, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(20deg);
+    animation: animate-leaf9 13s linear infinite;
+}
+@keyframes animate-leaf9 {
+    0%{
+       transform: rotate(20deg);
+    }
+    10%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(-20deg);
+    }
+    30%{
+        transform: rotate(-40deg);
+    }
+    40%{
+        transform: rotate(-60deg);
+    }
+    50%{
+        transform: rotate(-80deg);
+    }
+    60%{
+        transform: rotate(-100deg);
+    }
+    70%{
+        transform: rotate(-120deg);
+    }
+    80%{
+        transform: rotate(-140deg);
+    }
+}
+.leaf10{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background:rgba(0, 255, 47, 0.543) ;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    border-radius: 100% 0 100% 50%;
+    transform-origin: left;
+    transform: rotate(0deg);
+    animation: animate-leaf10 14s linear infinite;
+}
+@keyframes animate-leaf10 {
+    0%{
+       transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(-20deg);
+    }
+    20%{
+        transform: rotate(-40deg);
+    }
+    30%{
+        transform: rotate(-60deg);
+    }
+    40%{
+        transform: rotate(-80deg);
+    }
+    50%{
+        transform: rotate(-100deg);
+    }
+    60%{
+        transform: rotate(-120deg);
+    }
+    70%{
+        transform: rotate(-140deg);
+    }
+    80%{
+        transform: rotate(-160deg);
+    }
+}
+h1{
+    font-size: 5rem;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: fit-content;
+    color: rgba(240, 9, 144, 0.05);
+}
