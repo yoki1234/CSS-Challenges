@@ -37,6 +37,6 @@
     transition-timing-function: ease-in-out;
 }
 
-.move:hover{
+.move:hover {
     transform: translate(900px,0);
 }
