@@ -1,9 +1,20 @@
-img{
+
+body{
+    perspective: 1000px;
+    position: relative;
+}
+
+.first,.second{
+    position: absolute;
+    left:43vw;
     width: 300px;
     display: block;
     margin: auto;
     margin-top: 300px;
     transition: transform 2s ease-in-out 1s;
+}
+.first{
+    z-index: 3;
 }
 /* img:hover{
     transform: translate(-50%,200px);
@@ -17,7 +28,39 @@ img{
 /* img:hover{
     transform: skew(20deg,30deg);
 } */
-img:hover{
+/* img:hover{
     transform: rotate(45deg);
-    transform-origin: top left;
+} */
+/* img:hover{
+    transform: translateZ(300px);
+} */
+/* img{
+    animation: filp 5s ease-in-out ;
+    transform: rotateX(30deg);
+    transform: rotateZ(10deg);
+} */
+.first{
+    opacity: 0;
+    animation: first 5s ease-in-out;
+}
+@keyframes first {
+    0%{
+        transform: rotateY(10turn);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.second{
+    animation: second 5s ease-in-out;
+}
+@keyframes second {
+    0%{
+        transform: rotateY(10turn);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
