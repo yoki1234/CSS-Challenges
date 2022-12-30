@@ -1,0 +1,23 @@
+img{
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 300px;
+    transition: transform 2s ease-in-out 1s;
+}
+/* img:hover{
+    transform: translate(-50%,200px);
+} */
+/* img:hover{
+    transform: scale(2,2);
+} */
+/* img:hover{
+    transform: rotate(360deg);
+} */
+/* img:hover{
+    transform: skew(20deg,30deg);
+} */
+img:hover{
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
