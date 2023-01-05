@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+.container{
+    width: 355px;
+    height: 300px;
+}
+.container{
+    background-color: rgba(168, 109, 109, 0);
+    color: bisque;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 355px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 40px; */
+    /* box-sizing: border-box; */
+    position: relative;
+}
+.hello{
+    background-color: rgba(240, 248, 255, 0.383);
+    clip-path: polygon(87% 0, 100% 14%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+    width: 323px;
+    height: 245px;
+    position: absolute;
+    top:38px;
+    left: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    position: absolute;
+    z-index: 300;
+    top: 10px;
+    left: 10px;
+    width: calc(355px);
+    height: calc(300px);
+}
+
+
+/* .main-container{
+    background-color: rgba(160, 8, 8, 0);
+    color: bisque;
+    clip-path: polygon(76% 0, 100% 23%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+    margin: 10px;
+}
+.container{
+    width: 40px;
+    height: 50px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    background-color: rgb(232, 22, 22);
+    color: bisque;
+    clip-path: polygon(76% 0, 100% 23%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+    margin: 10px;
+} */
