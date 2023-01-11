@@ -1,0 +1,80 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #f6b93b;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding:25px 50px;
+    border: 3px solid #fc0000;
+    transition: all .5s;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    color: rgb(250, 18, 18);
+}
+a:hover span{
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    border:3px solid black;
+}
+a::before,
+a::after,
+span::before,
+span::after{
+ content: '';
+ position: absolute;
+ width: 25%;
+ height: 100%;
+ z-index: -1;
+ transition: all .5s;
+}
+
+a::before{
+    background-color: rgba(255, 0, 0, 0.5);
+    top:0;
+    left:-25%;
+}
+
+a::after{
+    background-color: rgba(0, 128, 0, 0.438);
+    top:-100%;
+    left:25%;
+}
+a:hover::before{
+    top: 0;
+    left: 0;
+}
+a:hover::after{
+    top:0;
+    left: 25%;
+}
+a span::before{
+    background-color: rgba(255, 255, 0, 0.39);
+    top:0;
+    right: -25%;
+}
+a:hover span::before{
+    top:0;
+    right: 0;
+}
+a:hover span::after{
+    top:0;
+    right: 25%;
+}
+a span::after{
+    background-color: rgba(0, 0, 255, 0.377);
+    top:100%;
+    right: 25%;
+}
