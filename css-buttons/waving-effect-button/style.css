@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #272727;
+}
+
+
+a{
+    text-decoration: none;
+    padding:15px 30px;
+    color: #00aeff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border: 2px solid #00aeff;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+}
+a:hover .wave{
+    top: 0;
+}
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: calc(100% + 22px);
+    background-color:#00aeff;
+    transition: all 1s;
+    z-index: -1;
+}
+a:hover{
+    color: white;
+}
+.wave::before{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 57%, 10% 55%, 17% 57%, 25% 60%, 32% 63%, 40% 68%, 48% 70%, 57% 74%, 67% 75%, 77% 74%, 85% 74%, 94% 76%, 100% 80%, 100% 88%, 100% 100%, 0 100%, 0 85%, 0 67%);
+    background-color: #00aeff;
+    animation: wavy 0.2s linear infinite;
+}
+    
+@keyframes wavy {
+    0%,100%{
+        clip-path: polygon(0 66%, 6% 68%, 14% 63%, 24% 62%, 32% 57%, 39% 47%, 47% 39%, 55% 43%, 62% 45%, 70% 53%, 84% 56%, 93% 59%, 100% 57%, 100% 88%, 100% 100%, 0 100%, 0 85%, 0 78%);
+    }
+    50%{
+        clip-path: polygon(0% 57%, 10% 55%, 17% 57%, 25% 60%, 32% 63%, 40% 68%, 48% 70%, 57% 74%, 67% 75%, 77% 74%, 85% 74%, 94% 76%, 100% 80%, 100% 88%, 100% 100%, 0 100%, 0 85%, 0 67%);
+    }
+    75%{
+        clip-path: polygon(0 67%, 6% 68%, 15% 68%, 22% 70%, 31% 70%, 38% 66%, 47% 61%, 54% 61%, 62% 55%, 73% 46%, 83% 40%, 93% 40%, 100% 49%, 100% 88%, 100% 100%, 0 100%, 0 85%, 0 78%);
+    }
+}
