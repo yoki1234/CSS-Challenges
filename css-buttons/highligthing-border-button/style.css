@@ -1,0 +1,49 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+}
+
+button{
+    border: none;
+    padding: 12px 40px;
+    background-color: rgb(211, 95, 17);
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 3px;
+}
+button::before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -5px;
+    left: -5px;
+    background-color: transparent;
+    border-top: 2px solid rgb(211, 95, 17);
+    border-left: 2px solid rgb(211, 95, 17);
+    transition: all .5s;
+}
+button::after{
+    content: '';
+    position: absolute;
+    width:24px;
+    height: 24px;
+    bottom: -5px;
+    right: -5px;
+    background-color: transparent;
+    border-right: 2px solid rgb(211, 95, 17);
+    border-bottom: 2px solid rgb(211, 95, 17);
+    transition: all .5s;
+}
+button:hover::after,button:hover::before{
+    height: 100%;
+    width: 100%;
+}
