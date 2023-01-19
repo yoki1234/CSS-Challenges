@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #212121;
+}
+.container{
+   width: 80px;
+   height: 80px;
+   background-color: rgba(255, 255, 255, 0.158); 
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: all .5s ease-in-out;
+   border: 3px solid white;
+}
+.ham-menu{
+    width: 50px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.ham-menu::before,
+.ham-menu::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.ham-menu::before{
+    transform: translateY(-16px);
+}
+.ham-menu::after{
+    transform: translateY(16px);
+}
+
+.container.open .ham-menu{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.container.open .ham-menu::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.container.open .ham-menu::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
