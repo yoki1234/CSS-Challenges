@@ -14,14 +14,14 @@ body{
 .container{
    width: 80px;
    height: 80px;
-   background-color: rgba(255, 255, 255, 0.158); 
+   background-color: transparent; 
    position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
    cursor: pointer;
    transition: all .5s ease-in-out;
-   border: 3px solid white;
+   border: 3px solid rgba(255, 255, 255, 0);
 }
 .ham-menu{
     width: 50px;

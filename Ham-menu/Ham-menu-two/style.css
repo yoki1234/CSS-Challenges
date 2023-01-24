@@ -1,0 +1,110 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #212121;
+}
+.container{
+    /* background-color: rgba(255, 0, 0, 0.295); */
+    width: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;  
+    transition-delay: 1.4s;  
+    overflow: hidden;
+    clip-path: polygon(9% 0, 88% 0, 100% 12%, 100% 89%, 88% 100%, 11% 100%, 0 90%, 0 10%);
+}
+.first-line,
+.middle-line,
+.last-line{
+    width: 50px;
+    height: 6px;
+    /* border-radius: 0; */
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 2px 5px rgba(255,101,47,.2); */
+    transition: all .2s ease-in-out;
+    transform: skew(20deg);
+    opacity: 1;
+}
+.first-line,.last-line{
+    /* transform: skew(20deg); */
+    transition-delay: .7s ;
+}
+.first-line{
+    transform: translateY(20px);
+    transition-delay: 1.2s;
+    transform-origin: center;
+}
+.last-line{
+    transform: translateY(-20px);
+    transition-delay: 1.2s;
+    transform-origin: center;
+}
+.container:hover .first-line{
+    transform: translateY(6px) rotate(45deg);
+    background-color: #212121;
+}
+.container:hover .last-line{
+    transform: translateY(-6px) rotate(-45deg);
+    background-color: #212121;
+}
+.middle-line{
+   width: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: transparent;
+   position: relative;
+}
+.middle-line::before{
+  content: '';
+   width: 30px;
+   height: 100%;
+   position: absolute;
+   background-color: white;
+   opacity: 1;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   transition: all .1s;
+   transition-delay: .6s;
+   transform: skew(20deg);
+   transition-delay: 1.3s;
+}
+.container:hover{
+    background-color: rgba(240, 248, 255, 0.164);
+}
+
+.container:hover .middle-line::before{
+    top: 0px;
+    left: -15px;
+    opacity: 0;
+}
+
+.middle-line::after{
+    content: '';
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    opacity: 1;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    transition: all .1s;
+   transition-delay: .6s;
+   transform: skew(20deg);
+   transition-delay: 1.3s;
+}
+.container:hover .middle-line::after{
+    top:0px;
+    right: -15px;
+    opacity: 0;
+}
+
